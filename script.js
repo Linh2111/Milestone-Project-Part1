@@ -8,7 +8,7 @@ function newImage(url) {
 }
 
 //Add player to game
-let playerOne = newImage('/assets/bird/big bird/4.png')
+let playerOne = newImage('/assets/bird/big bird/3.png')
 let direction = null;
 let x = 100;
 let y = 250;
@@ -38,7 +38,8 @@ function movePlayer() {
 setInterval(movePlayer, 1)
 direction = 'east'
 
-//Control arrow key
+
+//Allow user control with arrow key
 document.addEventListener('keydown', function (e) {
     if (e.repeat) return;
 
@@ -49,4 +50,8 @@ document.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowDown') {
         direction = 'south'
     }
+})
+
+document.addEventListener('keyup', function(e) {
+    direction = null;
 })

@@ -1,2 +1,35 @@
 
+body {
+    margin: 0; /* This is to leave no margins or 'gaps' */
+    background-color: rgba(79, 28, 18, 0.879);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+#container {
+    margin: 0;
+    padding: 35em;
+    background-size: 70%, 100%;
+    background-image: url("./assets/Background/Day.jpg");
+    background-repeat: repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100vw;
+
+}
+
+#level {
+    background-position: bottom 20px left 50px; /* look up how to change the position */
+    color:orange;
+}
+
+#score {
+    background-position: bottom right; /* look up how to change the position */
+    color: orange;
+}
 
